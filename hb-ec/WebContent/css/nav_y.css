@@ -1,0 +1,110 @@
+@CHARSET "UTF-8";
+/*对商品分类框进行总体设置*/
+.nav_y{
+	
+	width: 208px;
+	height: 397px;
+	clear: both;
+	background-color: #2b2b2b;
+	margin-left: 6px;
+	border: #2b2b2b 2px solid;
+	z-index: 10;
+	position: relative;
+	margin-top: -1px;
+}
+/*商品具体分类字体css*/
+.menu_font a{
+	font-size:16px;
+	color:#fff;
+	padding-top: 4.5px;
+}
+/*商品字体分隔符*/
+.menu_line{
+	font-size:16px;
+	color:#fff;
+	padding-top: 4.5px;
+}
+/*商品名字区域*/
+.menu_font{
+		width: 185px;
+		padding-left: 25px;
+}
+
+/*商品的指示图片*/
+.menu_img{
+	height: 17px;
+	width: 17px;
+	padding-top: 4px;
+	margin-left: -21px;
+}
+/*装饰用的箭头*/
+.arrow{
+	border: 4px transparent dashed ;
+	border-left: 0px #FFFFFF solid;
+	float:right;
+	line-height:25px;
+	margin-top:14px;
+	margin-right:4px;
+}
+.menu_li{
+	width: 210px;
+}
+.menu_change_bg{
+	
+   background-color: #fff;
+       
+}
+.menu_change_font{
+	color:#000;
+}
+
+
+/*----------侧拉框样式----------------------------------*/
+.subcate{
+	position:absolute;
+	top: -2px;
+	left: 210px;
+	width:715px;
+	height:400px;
+	background-color:#ffffff;
+	border:2px solid #2b2b2b;
+	box-shadow: 5px -2px 5px rgba(0, 0, 0, 0.3);
+	z-index:1;
+	display:none;
+	border-left-color: #fff;
+}
+/*侧拉菜单的左边分类区域*/
+.subcate .subcate_main{
+	width:455px;
+	float:left;
+}
+/*侧拉框总布局*/
+.frame{
+	height:150px;
+}
+/*侧拉框标题的样式*/
+.frame .title{
+	height:50px;
+}
+/*侧拉框内容分类的样式*/
+.frame .dis{
+	height:100px;
+}
+/*侧拉框右边图片展示区*/
+.subcate_side{
+	float:left;
+}
+/*侧拉框图片展示区的样式*/
+.subcate_side .side_img{
+	
+	height:150px;
+	
+}
+.title{
+	border:0.1px solid #2b2b2b;
+}
+/*侧拉框第一行文字样式*/
+.frame .title .title_sed{
+	float:left;
+	
+}

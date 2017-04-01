@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>爱购商城-便宜、实惠！</title>
+<!-- jquery js框架 -->
+<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+<!-- 广告轮播插件 -->
+<script type="text/javascript" src="../js/unslider.min.js"></script>
+<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+
+<!-- 对整个页面的css进行初始化 -->
+<link rel="stylesheet" href="../css/reset.css" type="text/css"/>
+<!-- 引入head文字的css样式 -->
+<link rel="stylesheet" href="../css/head.css" type="text/css"/>
+<!-- 引入logo 搜索框 二维码区域的样式 -->
+<link rel="stylesheet" href="../css/logo_search_2d.css" type="text/css"/>
+<!-- 引入广告滑动栏的css -->
+<link rel="stylesheet" href="../css/unslider.css" type="text/css"/>
+<!-- 引入商品分类栏的css -->
+<link rel="stylesheet" href="../css/nav_y.css" type="text/css"/>
+<!-- 引入市场细分部分的css -->
+<link rel="stylesheet" href="../css/adv_mid.css" type="text/css"/>
+<link rel="stylesheet" href="../css/user_area.css" type="text/css"/>
+
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+	<!-- head菜单栏start -->
+	<div class="head">
+		<!-- -->
+		<div class="head-nav">
+			<!-- 左边的文字 -->
+			<div class="head-nav-left">
+				<ul>
+					<li>
+						<a class="left-font" href="##">亲，请登陆</a>
+					</li>
+					<li>
+						<a class="left-font" href="##">免费注册</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 右边的文字 -->
+			<div class="head-nav-right">
+				<ul>
+					<li>
+						<a class="right-font" href="##">
+							商城首页
+						</a>
+					</li>
+					<li>
+						<a class="right-font" href="##"> 
+							<img class="right-img" src="../images/user.png">
+							个人中心
+						</a>
+					</li>
+					<li>
+						<a class="right-font" href="##">
+							<img class="cart-img" src="../images/cart.png">
+							购物车
+						</a>
+					</li>
+					<li>
+						<a class="right-font" href="##">
+							<img class="right-img" src="../images/favourite.png">
+							收藏夹
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 左边的logo -->
+	<div class="logo_search_2d">
+		<!-- 中间容器 -->
+		<div class="area_mid">
+			<!--logo  -->
+			<img src="../images/logo.jpg" />
+			<!-- 搜索框 -->
+
+			<div class="searchBox">
+				<!--搜索框上面的字的列表 -->
+				<div class="search_font">
+					<ul>
+						<li class="search_font_name">
+							<div class="search_good">
+								<a href="">商品 </a>
+							</div>
+						</li>
+						<!--按店铺名搜索 -->
+						<li class="search_font_name">
+							<div class="search_shop">
+								<a href="">店铺 </a>
+							</div>
+						</li>
+						<!--按店主搜索 -->
+						<li class="search_font_name">
+							<div class="search_seller">
+								<a href=""> 店主 </a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--搜索框样式 -->
+				<div class="search_Box">
+					<form class="search_Form" action="">
+						<!--搜索框背景 -->
+						<div class="search_button">
+							<input type="submit" value="搜索">
+
+						</div>
+
+						<div class="search_boxs">
+							<input type="text" value="请输入商品名">
+						</div>
+					</form>
+				</div>
+				<!--高级搜索 -->
+				<div class="advanced_search">
+					<a href=""> <span>高级</span><br /> <span>搜索</span>
+					</a>
+				</div>
+				<!--搜索热点 -->
+				<div class="search_hot">
+					<ul>
+						<li><a href="">最新连衣裙</a></li>
+						<li><a href="">四件套</a></li>
+						<li><a href="">连衣裙</a></li>
+						<li><a href="">潮流T恤</a></li>
+						<li><a href="">墙纸</a></li>
+						<li><a href="">男士外套</a></li>
+						<li><a href="">行车记录仪</a></li>
+						<li><a href="">耳机</a></li>
+						<li><a href="">苹果电脑</a></li>
+						<li><a href="">相机</a></li>
+						<li id="more"><a href="">更多<span>></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 二维码 -->
+			<div class="Qr">
+				<img class="Qr_img" src="../images/Qr.png" alt="二维码">
+			</div>
+		</div>
+		<!-- 横向导航栏start -->
+		<div class="nav_x">
+			<div class="area_mid_x">
+				<div class="all_dis">全部分类</div>
+			</div>
+
+			<!-- 商品分类导航栏 -->
+			<div class="nav_y">
+				<ul class="classification">
+					<li class="menu_li">
+						<div class="menu_font">
+						
+							<a href=""><img class="menu_img" src="../images/nav/1.png">家用电器</a> <span class="arrow"></span>
+							
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							
+							
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/2.png">手机</a> <span class="menu_line">/</span> <a href="">运营商</a>
+							<span class="menu_line">/</span> <a href="">数码</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/3.png">家居</a> <span class="menu_line">/</span> <a href="">家具</a>
+							<span class="menu_line">/</span> <a href="">家装</a> <span
+								class="menu_line">/</span> <a href="">厨具</a> <span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/4.png">男装</a> <span class="menu_line">/</span> <a href="">女装</a>
+							<span class="menu_line">/</span> <a href="">童装</a> <span
+								class="menu_line">/</span> <a href="">内衣</a> <span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/5.png">个性化妆</a> <span class="menu_line">/</span> <a href="">清洁用品</a>
+							<span class="menu_line">/</span> <a href="">宠物</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/6.png">鞋靴</a> <span class="menu_line">/</span> <a href="">箱包</a>
+							<span class="menu_line">/</span> <a href="">珠宝</a> <span
+								class="menu_line">/</span> <a href="">奢侈品</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/7.png">运动</a> <span class="menu_line">/</span> <a href="">户外</a>
+							<span class="menu_line">/</span> <a href="">钟表</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/8.png">汽车</a> <span class="menu_line">/</span> <a href="">汽车用品</a>
+							<span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/9.png">母婴</a> <span class="menu_line">/</span> <a href="">玩具乐器</a>
+							<span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/10.png">食品</a> <span class="menu_line">/</span> <a href="">酒类</a>
+							<span class="menu_line">/</span> <a href="">生鲜</a> <span
+								class="menu_line">/</span> <a href="">特产</a> <span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/11.png">医药保健</a> <span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/12.png">图书</a> <span class="menu_line">/</span> <a href="">音像</a>
+							<span class="menu_line">/</span> <a href="">电子书</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/13.png">机票</a> <span class="menu_line">/</span> <a href="">酒店</a>
+							<span class="menu_line">/</span> <a href="">旅游</a> <span
+								class="menu_line">/</span> <a href="">生活</a> <span class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+					<li class="menu_li">
+						<div class="menu_font">
+							<a href=""><img class="menu_img" src="../images/nav/14.png">理财</a> <span class="menu_line">/</span> <a href="">众筹</a>
+							<span class="menu_line">/</span> <a href="">保险</a> <span
+								class="arrow"></span>
+						</div> <!-- 右边隐藏的展示栏 -->
+						<div class="subcate">
+							<!-- 左边的分类区 -->
+							<div class="subcate_main">
+								<!-- 第一个部分 -->
+								<div class="frame">
+									<!-- 头标题 -->
+									<div class="title"></div>
+									<!-- 头分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 中间部分 -->
+								<div class="frame">
+									<!-- 中间标题 -->
+									<div class="title"></div>
+									<!-- 中间分类 -->
+									<div class="dis"></div>
+								</div>
+								<!-- 第三部分 -->
+								<div class="frame">
+									<!-- 脚标题 -->
+									<div class="title"></div>
+									<div class="dis"></div>
+								</div>
+
+							</div>
+							<!-- 右边图片展示区 -->
+							<div class="subcate_side">
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+								<div class="side_img"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav_x_mid">
+				<div class="nav_x_font">
+					<a href="">首页</a>
+				</div>
+				<div class="divide">|</div>
+				<div class="nav_x_font">
+					<a href="#">闪购</a>
+				</div>
+				<div class="divide">|</div>
+				<div class="nav_x_font">
+					<a href="#">限时抢</a>
+				</div>
+				<div class="divide">|</div>
+				<div class="nav_x_font">
+					<a href="#">团购</a>
+				</div>
+				<div class="divide">|</div>
+				<div class="nav_x_font">
+					<a href="">电器城</a>
+				</div>
+
+
+			</div>
+   	
+			<div class="clear"></div>
+			<!-- 右侧用户导航栏 -->
+			<div class="user_nav">
+				<div class="message">
+					<h1 class="message-1">快讯</h1>
+					<div class="message-2">
+						<h1 class="message-title">【抢购】</h1>
+						<div class="message-font">
+						华为手机假期大减价！	
+						</div>
+						<h1 class="message-title">【抢购】</h1>
+						<div class="message-font">
+						1元秒杀  早餐奶大放送！ 	
+						</div>
+						<h1 class="message-title">【活动】</h1>
+						<div class="message-font">
+						蓝月亮买一送一，买100减50! 	
+						</div>
+						<h1 class="message-title">【推荐】</h1>
+						<div class="message-font">
+						精选图书 满100减30
+						</div>
+						<h1 class="message-title">【推荐】</h1>
+						<div class="message-font">
+						莫负春光 9.9元抢出游装备
+						</div>
+					</div>
+				</div>
+   			</div>
+		</div>
+		<!-- 控制商品分类栏的颜色变化 -->
+		<script type="text/javascript">
+	                $(" .menu_li").hover(function () {
+	                    $(this).addClass("menu_change_bg");                
+	            		$(this).find(".menu_font").find("a").css("color","#000");
+	            		$(this).find(".menu_font").find(".arrow").css("border-left-color","#000");
+	            },function(){
+	            	 $(this).removeClass("menu_change_bg");
+	            	 $(this).find(".menu_font").find("a").removeClass("menu_change_font");
+	            	 $(this).find(".menu_font").find("a").css("color","#fff");
+	            	 $(this).find(".menu_font").find(".arrow").css("border-left-color","#fff");
+	            }); 
+		</script>
+		<!-- 侧拉栏的js -->
+		<script type="text/javascript">
+		
+		$(".classification").slide({
+			type:"menu",
+			titCell:".menu_li",
+			targetCell:".subcate",
+			delayTime:200,
+			triggerTime:10,
+			defaultPlay:false,
+			returnDefault:true,
+		});
+		</script>
+		<!-- 横向导航栏end -->
+	</div>
+	<!-- 广告轮播 -->
+	<div class="banner" id="b06">
+
+    <ul>
+
+        <li><img class="sliderimg" src="../images/adv/1.jpg" alt="" width="100%" height="482" ></li>
+
+        <li><img class="sliderimg" src="../images/adv/2.jpg" alt="" width="100%" height="482" ></li>
+
+        <li><img class="sliderimg" src="../images/adv/3.jpg" alt="" width="100%" height="482" ></li>
+
+        <li><img class="sliderimg" src="../images/adv/4.jpg" alt="" width="100%" height="482" ></li>
+
+        <li><img class="sliderimg" src="../images/adv/5.jpg" alt="" width="100%" height="480" ></li>
+
+    </ul>
+    
+    <a href="javascript:void(0);" class="unslider-arrow06 prev"><img class="arrow" id="al" src="../images/adv/arrowl.png" alt="prev" width="20" height="35"></a>
+
+    <a href="javascript:void(0);" class="unslider-arrow06 next"><img class="arrow" id="ar" src="../images/adv/arrowr.png" alt="next" width="20" height="37"></a>
+    
+
+</div>
+
+
+
+<script>
+
+function imgReload()
+
+{
+
+	var imgHeight = 0;
+
+	var wtmp = $("body").width();
+
+
+	$("#b06 ul li").each(function(){
+
+        $(this).css({width:wtmp + "px"});
+
+    });
+
+	$(".sliderimg").each(function(){
+
+		$(this).css({width:wtmp + "px"});
+
+		imgHeight = $(this).height();
+
+	});
+
+}
+
+
+
+$(window).resize(function(){imgReload();});
+
+
+
+$(document).ready(function(e) {
+
+	imgReload();
+
+    var unslider06 = $('#b06').unslider({
+
+		dots: true,
+
+		fluid: true
+
+	}),
+
+	data06 = unslider06.data('unslider');
+
+	
+
+	$('.unslider-arrow06').click(function() {
+
+        var fn = this.className.split(' ')[1];
+
+        data06[fn]();
+
+    });
+
+});
+
+
+
+</script>
+<!-- 广告轮播end -->
+<!--市场细分部分  -->
+<!--main-->
+    <div class="sub-nav">
+        
+        <input type="button" class="more-btn" value="更多"/>
+		<!--sub-nav-cell-->
+        <div class="sub-nav-cell">
+            <h3 class="orange">主题市场</h3>
+            <ul class="sub-nav-box">
+                <li><a href="#">爱美女人</a></li>
+                <li><a href="#">品质男人</a></li>
+                <li><a href="#">淘宝二手</a></li>
+                <li><a href="#">全球购</a></li>
+                <li><a href="#">品牌街</a></li>
+                <li><a href="#">汽车生活</a></li>
+                <li><a href="#">花嫁新娘</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">同城便民</a></li>
+                <li><a href="#">爱么装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">狠爱</a></li>
+                <li><a href="#">网络游戏</a></li>
+                <li><a href="#">潮流设计</a></li>
+                <li><a href="#">淘宝星愿</a></li>
+            </ul>
+        </div>
+        <div class="sub-nav-cell">
+            <h3 class="green-sp">特色购物</h3>
+            <ul class="sub-nav-box sp">
+                <li><a href="#">爱美女人</a></li>
+                <li><a href="#">品质男人</a></li>
+                <li><a href="#">淘宝二手</a></li>
+                <li><a href="#">全球购</a></li>
+                <li><a href="#">品牌街</a></li>
+                <li><a href="#">汽车生活</a></li>
+                <li><a href="#">花嫁新娘</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">同城便民</a></li>
+                <li><a href="#">爱么装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">狠爱</a></li>
+                <li><a href="#">网络游戏</a></li>
+                <li><a href="#">潮流设计</a></li>
+                <li><a href="#">淘宝星愿</a></li>
+
+            </ul>
+        </div>
+        <div class="sub-nav-cell">
+            <h3 class="red-now">当前热点</h3>
+            <ul class="sub-nav-box now">
+                <li><a href="#">爱美女人</a></li>
+                <li><a href="#">品质男人</a></li>
+                <li><a href="#">淘宝二手</a></li>
+                <li><a href="#">全球购</a></li>
+                <li><a href="#">品牌街</a></li>
+                <li><a href="#">汽车生活</a></li>
+                <li><a href="#">花嫁新娘</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">同城便民</a></li>
+                <li><a href="#">爱么装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">狠爱</a></li>
+                <li><a href="#">网络游戏</a></li>
+                <li><a href="#">潮流设计</a></li>
+                <li><a href="#">淘宝星愿</a></li>
+
+            </ul>
+        </div>
+        <div class="sub-nav-cell">
+            <h3 class="blue-more">更多精彩</h3>
+            <ul class="sub-nav-box more">
+                <li><a href="#">爱美女人</a></li>
+                <li><a href="#">品质男人</a></li>
+                <li><a href="#">淘宝二手</a></li>
+                <li><a href="#">全球购</a></li>
+                <li><a href="#">品牌街</a></li>
+                <li><a href="#">汽车生活</a></li>
+                <li><a href="#">花嫁新娘</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">同城便民</a></li>
+                <li><a href="#">爱么装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">家用电器</a></li>
+                <li><a href="#">狠爱</a></li>
+                <li><a href="#">网络游戏</a></li>
+                <li><a href="#">潮流设计</a></li>
+                <li><a href="#">淘宝星愿</a></li>
+            </ul>
+        </div>
+    </div>
+		<script type="text/javascript">
+		$(".sub-nav").find(".more-btn").click(function(){
+			if($(".sub-nav").css("overflow") == "hidden"){
+			  $(".sub-nav").css("overflow","inherit");
+			  $(".sub-nav").find(".more-btn").css("bottom","-50px");
+			  $(".sub-nav").find(".sub-nav-cell").css("height","155%");
+			}else{
+			  $(".sub-nav").css("overflow","hidden");
+			  $(".sub-nav").find(".more-btn").css("bottom","10px");
+			  $(".sub-nav").find(".sub-nav-cell").css("height","100%");
+			}
+			});
+		</script>
+	<!-- 市场细分完 -->
+   
+</body>
+<!-- ../images/adv/05.jpg -->
+</html>

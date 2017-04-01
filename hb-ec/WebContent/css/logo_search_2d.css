@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+/*logo 搜索框 二维码 区域的属性*/
+.logo_search_2d{
+	heigth:135px;
+	width:1285px;
+}
+/*logo 搜索框 区域中间容器*/
+.area_mid{
+	margin:40px 125px;
+	float:left;
+	width: 1280px;
+	
+}
+/*logo的属性*/
+.area_mid img{
+	heigth:90px;
+	width:235px;
+}
+/**/
+
+/*搜索框列表不排列*/
+.searchBox .search_font .search_font_name{
+	float:left;
+	position:relative;
+}
+/*搜索框上面的文字*/
+.searchBox .search_font .search_font_name a{
+	color:#ff4400;
+	font-weight:bold;
+	padding-right:13px;
+	text-align: center;
+	text-decoration: none;
+	
+}
+/*搜索框靠着图片*/
+.searchBox{
+	height: 85px;
+	float:left;
+	margin-left: 105px;
+
+}
+/*将搜索框向下移动*/
+.search_Box{
+	float:left;
+	clear:both;
+}
+/*搜索框图片样式*/
+.searchBox .search_Box{
+	padding: 3px 0 3px 3px;
+	height: 34px;
+	background: #F03726;
+	width:550px;
+	margin-top: 3px;
+}
+/*搜索框的靠近位置*/
+.search_Box{
+	float:left;
+
+	}
+/*搜索框的样式*/
+.search_boxs input{
+	line-height:30px;
+	width: 450px;
+	margin-top:2px ; 
+	border:0px;
+	color:#ccc;
+}
+/*搜索按钮的移动到右边*/
+.search_button{
+	float:right;
+}
+
+/*搜索按钮的样式*/
+.search_button input{	
+	height: 34px;
+	border:0px;
+	background-color: #F03726;
+	color:#FFF;
+	width: 100px;
+	font-size: 20px;
+}
+/*高级搜索按钮样式*/
+.advanced_search{
+	float:left;
+	margin-left: 7px;
+	margin-top:4px;
+}
+/*高级搜索按钮的字体*/
+.advanced_search a {
+    color: #6c6c6c;
+}
+/*让搜索框的热门搜索字下移*/
+.search_hot{
+	clear:both;
+}
+/*设置热门搜索排版样式*/
+.search_hot li {
+    float: left;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+/*设置热门搜索字字体颜色*/
+.search_hot ul li a {
+    color: #6c6c6c;
+}
+.Qr{
+	float:left;
+	margin-left: 126px;
+	margin-top: 6px;
+
+}
+/*二维码属性*/
+.Qr .Qr_img{
+	float:left;
+	height:85px;
+	width:85px;
+}
+.nav_x{
+	
+  margin: -14px 123px 0px 123px;
+}
+/*全部分类的样式*/
+.all_dis {
+	font-size: 23px;
+	background-color: #d2364c;
+	color: #fff;
+	padding: 5px 60px 5px 60px;
+}
+/*全部分类的移动*/
+.area_mid_x{
+	margin-left: 6px;
+}
+/*横向导航栏字体*/
+.nav_x_font a{
+	font-size:22px;
+	padding-left:25px;
+	color:#333;
+	font-weight: bold;
+}
+/*横向导航栏在鼠标放上去时候*/
+.nav_x_font a:hover{
+	font-size:22px;
+	padding-left:25px;
+	color:#e95738;
+}
+/*横向导航栏分隔符*/
+.divide{
+	font-size:22px;
+	padding-left:25px;
+	color:#dbdbdb;
+}
+.nav_x_mid{
+	margin: -40px 0px 0px 32px
+}

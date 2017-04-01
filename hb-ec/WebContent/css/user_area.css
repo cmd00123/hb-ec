@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+.user_nav{
+	height:400px;
+	width:210px;
+	clear:both;
+	position:absolute;
+	background-color:#fff;
+	z-index:12;
+	right: 142px;
+	top: 230px;
+}
+.message{
+	height:210px;
+	width:209px;
+}
+.message-1{
+	color: #333;
+	font-size: 14px;
+	border-bottom: 3px #d2364c solid;
+	width: 190px;
+	margin-left: 7px;
+	font-weight: bold;
+	padding: 4px 0px 6px 8px;
+	}
+.message-2{
+	height: 185px;
+	width: 210px;
+}
+.message-title{
+	color:ff5d0c;
+}

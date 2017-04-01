@@ -1,0 +1,74 @@
+
+/*设置head栏的css*/
+.head{
+	/*提高属性优先级避免被覆盖*/
+	z-index: 10000;
+	background-color:#f4f5f6;
+	width:100%;
+	height:26px;
+	border-bottom: 1px solid #eee;
+	padding:0px;
+}
+
+/*设置head中间栏两端的距离*/
+.head-nav{
+	background-color:#f4f5f6;
+	float:left;
+	width: 1190px;
+	margin:0px 95px;
+	
+	
+	
+}
+/*head栏右边区域属性*/
+.head-nav-right{
+	float:right;
+	margin-top: 3.5px;
+}
+.head-nav-left{
+	float:left;
+	margin-top: 3.5px;
+}
+/*鼠标移动变色right*/
+.head-nav-right a:hover{
+	background-color:#f4f5f6;
+	color:#f44c2f;
+}
+/*鼠标移动变色left*/
+.head-nav-left a:hover{
+	background-color:#f4f5f6;
+	color:#fe7a65;
+}
+/*head栏左边字体属性*/
+.head-nav-left a{
+	background-color:#f4f5f6;
+	color:#f44c2f;
+	padding-left:10px;
+
+}
+/*head栏右边字体属性*/
+.head-nav-right a{
+	background-color:#f4f5f6;
+	color:#5c5654;	
+	padding-right:20px;
+}
+
+/*购物车图片的属性*/
+.cart-img{
+	height:15.5px;
+	width:15.5px;
+	background-color:#f4f5f6;
+	padding-right:2px;
+	padding-top:2px;
+}
+/*商城首页、个人中心、收藏夹图片属性*/
+.head-nav-right .right-img{
+	height:14px;
+	width:14px;
+	background-color:#f4f5f6;
+	padding-right:2px;
+	padding-top:2px;
+}
+
+	
+	
